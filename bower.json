@@ -1,0 +1,20 @@
+{
+  "name": "fromscratch.xyz",
+  "version": "0.0.0",
+  "authors": [
+    "Gilles Hoarau <gilles@fromscratch.xyz>"
+  ],
+  "description": "My Web projects",
+  "license": "MIT",
+  "homepage": "http://fromscratch.xyz/",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.4"
+  }
+}
