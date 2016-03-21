@@ -14,11 +14,11 @@ class Jumbotron extends Components {
     $result  .= $label ? "\t".'<'.self::$labelWrapper.'>'.$label.'</'.self::$labelWrapper.'>'."\n" : false;
     $result  .= $description ? "\t".'<'.self::$descriptionWrapper.'>'.$description.'</'.self::$descriptionWrapper.'>' : false;
 
-    return self::_wOpen().$result.self::_wClose(); // remplacer par une méthode de Components
+    return self::wrapComponent($result);
   }
   // Render the Components
   function draw($label=false,$description=false) {
-    print self::make($label,$description); // remplacer par une méthode de Components
+    print self::make($label,$description);
   }
 }
 ?>

@@ -1,13 +1,8 @@
 <?php
 /**
  * Used to set up and fix common variables and include
- * the WordPress procedural and class library.
+ * the Bootscratch class library.
  *
- * Allows for some configuration in wp-config.php (see default-constants.php)
- *
- * @internal This file must be parsable by PHP4.
- *
- * @package WordPress
  */
 
 /**
@@ -28,3 +23,4 @@ require( BSINC . '/bs-errormng.php' );
 require( BSINC . '/bs-bootstrap.php' );
 require( BSINC . '/_bootstrap/container.php' );
 require( BSINC . '/_bootstrap/jumbotron.php' );
+require( BSINC . '/_bootstrap/label.php' );
