@@ -19,9 +19,14 @@ class Components {
 
   }
 
-  function _wOpen() {
+  function wrapComponent($result,$wrapper_class=false) {
+    return self::_wOpen($wrapper_class).$result.self::_wClose();
+  }
+
+  function _wOpen($wrapper_class=false) {
     $childClass = get_called_class();
-    return "\n".'<'.$childClass::$wrapper.' class="'.$childClass::$class.'">'."\n";
+    $wrapper_class = $wrapper_class != false ? ' '.$wrapper_class : false;
+    return "\n".'<'.$childClass::$wrapper.' class="'.$childClass::$class.$wrapper_class.'">'."\n";
   }
   function _wClose() {
     $childClass = get_called_class();
